@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Matei-George Baban">
+    <meta name="description"
+        content="Cu echipamente de ultimă generație, antrenori dedicați și o atmosferă motivantă, MGYM este locul unde transformările devin realitate. Indiferent de obiectivele tale, aici găsești tot ce ai nevoie pentru un stil de viață activ și sănătos.">
+    <meta name="keywords" content="fitness, gym, cluj, cluj-napoca, manastur, sala">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title> MGYM </title>
+    <style>
+        body {
+            background-color: rgba(18, 18, 18);
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .custom-navbar {
+            background-color: purple;
+        }
+
+        footer {
+            color: white;
+            font-weight: bold;
+            background-color: purple;
+            margin: 4vw 0 0 0;
+            padding: 1vw;
+        }
+
+        .text-footer {
+            padding: 0;
+            margin: 0 0 2vh;
+            font-size: 25px;
+        }
+
+        .logo-contact {
+            width: 3vw;
+            margin: 0 1vw;
+            padding: 0;
+        }
+
+        .flex-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imagine-despre {
+            width: 40vw;
+        }
+
+        .beneficii {
+            text-align: left;
+
+            font-size: 25px;
+            padding: 0 4vw;
+        }
+
+        p {
+            font-size: 1.5em;
+            padding: 0 4vw;
+        }
+
+        h2 {
+            margin-top: 50px;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        h3 {
+            margin-top: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        span {
+            color: purple;
+            font-weight: bold;
+        }
+
+        .card-abonamente {
+            box-sizing: border-box;
+            border-radius: 2vw;
+            background-color: purple;
+            padding: 1vw;
+            text-align: center;
+            margin: 0;
+        }
+
+
+        .card-abonamente p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .preturi {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        .h3-abonamente {
+            margin: 0;
+            padding: 0;
+        }
+
+        .scroll {
+            scroll-margin-top: 100px;
+        }
+
+        .poze-antrenori {
+            width: 20vw;
+            padding: 0;
+            border-radius: 100%
+        }
+
+        @media (min-width: 1140px) {
+            .fullscreen {
+                height: 100vh;
+            }
+        }
+
+        .carousel-caption p {
+            text-shadow: black 5px 0 10px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <h1><a class="navbar-brand" href="index.html">
+                    <img src="imagini/logo-mgym.png" alt="MGYM" width="50">
+                </a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#despre-noi">Despre noi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#abonamente">Abonamente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#antrenori">Antrenori</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div id="header" class="carousel slide carousel-fade custom-carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#header" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#header" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#header" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#header" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#header" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item fullscreen active">
+                    <img src="imagini/first-carousel.jpg" class="d-block w-100"
+                        alt="Femeie care face abdomene pe o saltea de yoga într-un spațiu deschis.">
+                    <div class="carousel-caption">
+                        <p class="bold">Antrenament pentru abdomen</p>
+                        <p>Exercițiile pentru abdomen sunt esențiale pentru o postură corectă și un corp tonifiat. Fii
+                            constantă și bucură-te de rezultate vizibile!</p>
+                    </div>
+                </div>
+                <div class="carousel-item fullscreen">
+                    <img src="imagini/second-carousel.jpg" class="d-block w-100"
+                        alt="Persoană care face ridicări de greutăți cu o halteră într-o sală de fitness modernă">
+                    <div class="carousel-caption">
+                        <p class="bold">Antrenamente de forță pentru performanță</p>
+                        <p>Vino să-ți depășești limitele într-o sală dotată cu echipamente moderne. Indiferent dacă ești
+                            începător sau avansat, vei avea parte de un mediu perfect pentru a-ți atinge obiectivele de
+                            fitness.</p>
+                    </div>
+                </div>
+                <div class="carousel-item fullscreen">
+                    <img src="imagini/third-carousel.jpg" class="d-block w-100"
+                        alt="Grup de trei femei care fac exerciții de stretching pe saltele roz într-o sală spațioasă">
+                    <div class="carousel-caption">
+                        <p class="bold">Flexibilitate și echilibru într-un mediu relaxant</p>
+                        <p>Alătură-te claselor noastre de stretching și yoga pentru a-ți îmbunătăți flexibilitatea și
+                            starea de bine. Te așteptăm într-o sală spațioasă, unde relaxarea și energia pozitivă sunt
+                            la ele acasă!</p>
+                    </div>
+                </div>
+                <div class="carousel-item fullscreen">
+                    <img src="imagini/fourth-carousel.jpg" class="d-block w-100"
+                        alt="Două femei care fac antrenament cu gantere la sală, fotografiate din spate">
+                    <div class="carousel-caption">
+                        <p class="bold">Forță și rezistență</p>
+                        <p>Antrenamentele cu greutăți îți dezvoltă forța fizică și rezistența. Progresul vine cu fiecare
+                            repetare!
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item fullscreen">
+                    <img src="imagini/fifth-carousel.jpg" class="d-block w-100"
+                        alt="Două femei care fac plank și bat palma într-un studio de fitness.">
+                    <div class="carousel-caption">
+                        <p class="bold">Motivație în echipă</p>
+                        <p>Antrenează-te alături de un partener pentru mai multă energie și motivație. Împreună sunteți
+                            de neoprit!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <div id="despre-noi" class="scroll">
+        <h2>Despre noi</h2>
+        <div>
+            <div>
+                <p>
+                    MGYM este o sală de fitness modernă și bine echipată, situată în <span>Cluj-Napoca,
+                        România</span>. Ea oferă o gamă variată de facilități pentru antrenamente, inclusiv
+                    <span>echipamente de ultimă generație pentru cardio, forță și flexibilitate</span>, precum și
+                    programe personalizate de antrenament. MGYM se concentrează pe crearea unui mediu plăcut și
+                    motivațional pentru a ajuta clienții să atingă obiectivele lor de sănătate și fitness.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="abonamente" class="scroll">
+        <h2>Abonamente</h2>
+        <div class="container">
+            <div class="row gap-3 justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 card-abonamente">
+                    <h3 class="h3-abonamente">Standard</h3>
+                    <p class="preturi">250 lei/lună</p>
+                    <hr>
+                    <div class="descriere-abonamente">
+                        <p>3 intrări pe săptămână</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 card-abonamente">
+                    <h3 class="h3-abonamente">Plus</h3>
+                    <p class="preturi">350 lei/lună</p>
+                    <hr>
+                    <div class="descriere-abonamente">
+                        <p>5 intrări pe săptămână</p>
+                        <p>Acces zona de alergat</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 card-abonamente">
+                    <h3 class="h3-abonamente">VIP <span class="badge text-bg-light align-items-end">Nou</span></h3>
+                    <p class="preturi">500 lei/lună</p>
+                    <hr>
+                    <div class="descriere-abonamente">
+                        <p>Intrări nelimitate</p>
+                        <p>Acces zona de alergat</p>
+                        <p>Acces curs "Body Balance"</p>
+                        <p>Antrenor personal</p>
+                        <p>Plan alimentar</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 card-abonamente">
+                    <h3 class="h3-abonamente">Elev/Student </h3>
+                    <p class="preturi">150 lei/lună </p>
+                    <hr>
+                    <div class="descriere-abonamente">
+                        <p>5 intrări pe săptămână</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Body Balance</h2>
+        <p>Acest curs combină tehnici de yoga, pilates și stretching pentru a-ți oferi o experiență relaxantă, dar și
+            revitalizantă. Perfect pentru reducerea stresului, îmbunătățirea flexibilității și întărirea musculaturii,
+            Body Balance te ajută să-ți conectezi mintea și corpul într-o stare de echilibru perfect.</p>
+    </div>
+
+    <div id="antrenori" class="scroll">
+        <h2>Antrenori</h2>
+        <div class="container">
+            <div class="row gap-5 justify-content-center">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <img class=" poze-antrenori" src="imagini/andreea-banciu.jpg"
+                        alt="O femeie cu părul blond prins în coadă și cu un top sportiv roșu, care zâmbește și se uită într-o parte, într-o încăpere">
+                    <h3>Andreea Banciu</h3>
+                    <p class="text-antrenori">Andreea este deja un nume de încredere în lumea fitness-ului, cu o pasiune
+                        de neegalat
+                        pentru a ajuta oamenii să-și depășească limitele. Cu o atitudine prietenoasă și un plan
+                        personalizat
+                        pentru fiecare client, ea combină cunoștințele teoretice cu experiența practică pentru a
+                        transforma
+                        antrenamentele într-o adevărată călătorie spre succes.</p>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <img class="poze-antrenori" src="imagini/vlad-stanciu.jpg"
+                        alt="Un bărbat musculos cu păr brunet, care stă într-o poziție de flotare, în mâna stângă având o ganteră pe care o trage la piept">
+                    <h3>Vlad Stanciu</h3>
+                    <p class="text-antrenori"> Vlad aduce experiență și profesionalism în fiecare antrenament. Pasionat
+                        de fitness și transformări reale, el te va ghida pas cu pas, adaptând programele de antrenament
+                        nevoilor tale specifice. Cu o combinație de motivație, strategie și multă răbdare, Vlad este
+                        partenerul ideal pentru a-ți atinge obiectivele.</p>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <img class="poze-antrenori" src="imagini/andrei-tonciu.png"
+                        alt="Un bărbat puternic cu tatuaje, executând un exercițiu de genuflexiune cu haltera într-o sală de fitness.">
+                    <h3>Andrei Tonciu</h3>
+                    <p class="text-antrenori"> Cu o pasiune autentică pentru fitness și sănătate, Andrei Tonciu este
+                        unul dintre cei mai apreciați antrenori de la MGYM. Cu o experiență vastă în antrenamente
+                        funcționale, dezvoltare musculară și pierdere în greutate, Andrei se remarcă prin abordarea sa
+                        personalizată și motivația pe care o oferă fiecărui client. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="text-footer">MGYM Cluj-Napoca Mănăștur</p>
+        <div class="flex-logo">
+            <a href=https://www.instagram.com target="_blank"><img class="logo-contact" src="imagini/instagram.png"
+                    alt="Instagram"></a>
+            <a href=https://www.facebook.com target="_blank"><img class="logo-contact" src="imagini/facebook.png"
+                    alt="Facebook"></a>
+            <a href="mailto:mgym@gmail.com" target="_blank"><img class="logo-contact" src="imagini/email.png"
+                    alt="Mail"></a>
+            <a href="tel:+40752123456" target="_blank"><img class="logo-contact" src="imagini/phone-call.png"
+                    alt="Telefon"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
