@@ -45,16 +45,12 @@
         }
 
         .logo-contact {
-            width: 3vw;
+            width: 3em;
             margin: 0 1vw;
             padding: 0;
         }
 
-        .flex-logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+
 
         .imagine-despre {
             width: 40vw;
@@ -69,7 +65,7 @@
 
         p {
             font-size: 1.5em;
-            padding: 0 4vw;
+            padding: 0 4vw 0 4vw;
         }
 
         h2 {
@@ -90,18 +86,10 @@
         }
 
         .card-abonamente {
-            box-sizing: border-box;
-            border-radius: 2vw;
             background-color: purple;
-            padding: 1vw;
             text-align: center;
-            margin: 0;
-        }
-
-
-        .card-abonamente p {
-            margin: 0;
-            padding: 0;
+            color: white;
+            border: 0;
         }
 
         .preturi {
@@ -138,12 +126,38 @@
             font-weight: bold;
         }
 
-        .descriere-abonamente {
-            margin: 0;
-            padding: 0;
-        }
-        .despre-noi-logo{
+
+        .despre-noi-logo {
             width: 30vw;
+        }
+
+        .custom-list {
+            color: white;
+            background-color: purple;
+            border: 0;
+        }
+
+        .pret {
+            background-color: purple;
+            padding: 1vw;
+            font-weight: bold;
+            box-sizing: border-box;
+            border-radius: 1vw;
+        }
+
+        .card-abonamente {
+            height: 50vh;
+            margin: 0 0 2vw 0;
+        }
+
+        .copyright {
+            font-size: 1em;
+            margin: 1vh 0 0 0;
+        }
+
+        .card-antrenori {
+            background-color: purple;
+            color: white;
         }
     </style>
 </head>
@@ -169,6 +183,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light" aria-current="page" href="#antrenori">Antrenori</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="#locatie">Locatie</a>
                     </li>
                 </ul>
             </div>
@@ -272,50 +289,70 @@
     <div id="abonamente" class="scroll">
         <h2>Abonamente</h2>
         <div class="container">
-            <div class="row gap-3 justify-content-center">
-                <div class="col-lg-3 col-md-6 col-sm-12 card-abonamente">
-                    <h3 class="h3-abonamente">Standard</h3>
-                    <p class="preturi">250 lei/lună</p>
-                    <hr>
-                    <div class="descriere-abonamente">
-                        <p>3 intrări pe săptămână</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="card card-abonamente" style="width: 18rem;">
+                        <div class="card-body">
+                            <h3 class="card-title">Standard</h3>
+                            <p class="card-text">250 lei/lună</p>
+                            <hr>
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item custom-list">3 intrări pe săptămână</li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 card-abonamente">
-                    <h3 class="h3-abonamente">Plus</h3>
-                    <p class="preturi">350 lei/lună</p>
-                    <hr>
-                    <div class="descriere-abonamente">
-                        <p>5 intrări pe săptămână</p>
-                        <p>Acces zona de alergat</p>
+                <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="card card-abonamente" style="width: 18rem;">
+                        <div class="card-body">
+                            <h3 class="card-title">Plus</h3>
+                            <p class="card-text">350 lei/lună</p>
+                            <hr>
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item custom-list">5 intrări pe săptămână</li>
+                                <li class="list-group-item custom-list">Acces zonă de alergat</li>
+                            </ul>
+                        </div>
+
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 card-abonamente">
-                    <h3 class="h3-abonamente">VIP <span class="badge text-bg-light align-items-end">Nou</span></h3>
-                    <p class="preturi">500 lei/lună</p>
-                    <hr>
-                    <div class="descriere-abonamente">
-                        <p>Intrări nelimitate</p>
-                        <p>Acces zona de alergat</p>
-                        <p>Acces curs "Body Balance"</p>
-                        <p>Antrenor personal</p>
-                        <p>Plan alimentar</p>
-                    </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="card card-abonamente" style="width: 18rem;">
+                        <div class="card-body">
+                            <h3 class="card-title">VIP <span class="badge text-bg-light align-items-end">Nou</span>
+                            </h3>
+                            <p class="card-text">500 lei/lună</p>
+                            <hr>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item custom-list">Intrări nelimitate</li>
+                                <li class="list-group-item custom-list">Acces zonă de alergat</li>
+                                <li class="list-group-item custom-list">Acces curs ”Body Balance”</li>
+                                <li class="list-group-item custom-list">Antrenor personal</li>
+                                <li class="list-group-item custom-list">Plan Alimentar</li>
+                            </ul>
+                        </div>
 
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 card-abonamente">
-                    <h3 class="h3-abonamente">Elev/Student </h3>
-                    <p class="preturi">150 lei/lună </p>
-                    <hr>
-                    <div class="descriere-abonamente">
-                        <p>5 intrări pe săptămână</p>
+                <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <div class="card card-abonamente" style="width: 18rem;">
+                        <div class="card-body">
+                            <h3 class="card-title">Elev/Student</h3>
+                            <p class="card-text">150 lei/lună</p>
+                            <hr>
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item custom-list">5 intrări pe săptămână</li>
+                            </ul>
+                        </div>
 
                     </div>
+
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <div>
@@ -328,44 +365,49 @@
     <div id="antrenori" class="scroll">
         <h2>Antrenori</h2>
         <div class="container">
-            <div class="row  justify-content-center">
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <img class=" poze-antrenori" src="imagini/andreea-banciu.jpg"
+            <div class="row gap-3 justify-content-center">
+                <div class="card card-antrenori p-0 col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center"
+                    style="width: 18rem;">
+                    <img class="card-img-top" src="imagini/andreea-banciu.jpg"
                         alt="O femeie cu părul blond prins în coadă și cu un top sportiv roșu, care zâmbește și se uită într-o parte, într-o încăpere">
-                    <h3>Andreea Banciu</h3>
-                    <p class="text-antrenori">Andreea este deja un nume de încredere în lumea fitness-ului, cu o pasiune
-                        de neegalat
-                        pentru a ajuta oamenii să-și depășească limitele. Cu o atitudine prietenoasă și un plan
-                        personalizat
-                        pentru fiecare client, ea combină cunoștințele teoretice cu experiența practică pentru a
-                        transforma
-                        antrenamentele într-o adevărată călătorie spre succes.</p>
+                    <div class="card-body">
+                        <h3 class="card-title">Andreea Banciu</h3>
+                        <p class="card-text">Antrenoare curs "Body Balance</p>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <img class="poze-antrenori" src="imagini/vlad-stanciu.jpg"
+                <div class="card card-antrenori p-0 col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center"
+                    style="width: 18rem;">
+                    <img class="card-img-top" src="imagini/vlad-stanciu.jpg"
                         alt="Un bărbat musculos cu păr brunet, care stă într-o poziție de flotare, în mâna stângă având o ganteră pe care o trage la piept">
-                    <h3>Vlad Stanciu</h3>
-                    <p class="text-antrenori"> Vlad aduce experiență și profesionalism în fiecare antrenament. Pasionat
-                        de fitness și transformări reale, el te va ghida pas cu pas, adaptând programele de antrenament
-                        nevoilor tale specifice. Cu o combinație de motivație, strategie și multă răbdare, Vlad este
-                        partenerul ideal pentru a-ți atinge obiectivele.</p>
+                    <div class="card-body">
+                        <h3 class="card-title">Vlad Stanciu</h3>
+                        <p class="card-text">Antrenor specializat pe slăbire</p>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <img class="poze-antrenori" src="imagini/andrei-tonciu.png"
-                        alt="Un bărbat puternic cu tatuaje, executând un exercițiu de genuflexiune cu haltera într-o sală de fitness.">
-                    <h3>Andrei Tonciu</h3>
-                    <p class="text-antrenori"> Cu o pasiune autentică pentru fitness și sănătate, Andrei Tonciu este
-                        unul dintre cei mai apreciați antrenori de la MGYM. Cu o experiență vastă în antrenamente
-                        funcționale, dezvoltare musculară și pierdere în greutate, Andrei se remarcă prin abordarea sa
-                        personalizată și motivația pe care o oferă fiecărui client. </p>
+                <div class="card card-antrenori p-0 col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center"
+                    style="width: 18rem;">
+                    <img class="card-img-top" src="imagini/andrei-tonciu.png"
+                        alt="Un bărbat musculos cu păr brunet, care stă într-o poziție de flotare, în mâna stângă având o ganteră pe care o trage la piept">
+                    <div class="card-body">
+                        <h3 class="card-title">Andrei Tonciu</h3>
+                        <p class="card-text">Antrenor specializat pe creștere musculară</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="scroll" id="locatie">
+        <h2>Locație</h2>
+        <p>Sala se află pe Calea Mănăștur 95, aproape de Kaufland Mănăștur.</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1366.6212483001655!2d23.562361!3d46.7601164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490e630cdc8bff%3A0xa0401b1ddd981fb!2sCalea%20M%C4%83n%C4%83%C8%99tur%2095%2C%20Cluj-Napoca%20400535!5e0!3m2!1sro!2sro!4v1732726622489!5m2!1sro!2sro"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
     <footer>
-        <p class="text-footer">MGYM Cluj-Napoca Mănăștur</p>
-        <div class="flex-logo">
+        <p class="d-flex justify-content-center align-items-center text-footer">MGYM Cluj-Napoca Mănăștur</p>
+        <div class="d-flex justify-content-center align-items-center">
             <a href=https://www.instagram.com target="_blank"><img class="logo-contact" src="imagini/instagram.png"
                     alt="Instagram"></a>
             <a href=https://www.facebook.com target="_blank"><img class="logo-contact" src="imagini/facebook.png"
@@ -375,6 +417,9 @@
             <a href="tel:+40752123456" target="_blank"><img class="logo-contact" src="imagini/phone-call.png"
                     alt="Telefon"></a>
         </div>
+        <p class="d-flex justify-content-center align-items-center copyright">
+            &copy; MGYM Cluj-Napoca. Toate drepturile rezervate.
+        </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
