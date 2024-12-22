@@ -17,6 +17,8 @@
         rel="stylesheet">
     <title> MGYM </title>
     <style>
+        /* GENERAL */
+
         body {
             background-color: rgba(18, 18, 18);
             color: white;
@@ -24,43 +26,6 @@
             padding: 0;
             text-align: center;
             font-family: 'Inter', sans-serif;
-        }
-
-        .custom-navbar {
-            background-color: purple;
-        }
-
-        footer {
-            color: white;
-            font-weight: bold;
-            background-color: purple;
-            margin: 4vw 0 0 0;
-            padding: 1vw;
-        }
-
-        .text-footer {
-            padding: 0;
-            margin: 0 0 2vh;
-            font-size: 25px;
-        }
-
-        .logo-contact {
-            width: 3em;
-            margin: 0 1vw;
-            padding: 0;
-        }
-
-
-
-        .imagine-despre {
-            width: 40vw;
-        }
-
-        .beneficii {
-            text-align: left;
-
-            font-size: 25px;
-            padding: 0 4vw;
         }
 
         p {
@@ -85,32 +50,21 @@
             font-weight: bold;
         }
 
-        .card-abonamente {
-            background-color: purple;
-            text-align: center;
-            color: white;
-            border: 0;
-        }
-
-        .preturi {
-            font-weight: bold;
-            font-size: 1.5em;
-        }
-
-        .h3-abonamente {
-            margin: 0;
-            padding: 0;
-        }
-
         .scroll {
             scroll-margin-top: 100px;
         }
 
-        .poze-antrenori {
-            width: 20vw;
-            padding: 0;
-            border-radius: 100%
+        .bold {
+            font-weight: bold;
         }
+
+        /* NAVBAR */
+
+        .custom-navbar {
+            background-color: purple;
+        }
+
+        /* HEADER */
 
         @media (min-width: 1140px) {
             .fullscreen {
@@ -118,23 +72,37 @@
             }
         }
 
+        @media (max-width: 768px) {
+            .carousel-caption p {
+                font-size: 0.7em;
+            }
+        }
+
         .carousel-caption p {
             text-shadow: black 5px 0 10px;
         }
 
-        .bold {
-            font-weight: bold;
-        }
+        /* DESPRE NOI */
 
+        .beneficii {
+            text-align: left;
+            font-size: 25px;
+            padding: 0 4vw;
+        }
 
         .despre-noi-logo {
             width: 30vw;
         }
 
-        .custom-list {
-            color: white;
+        /* ABONAMENTE */
+
+        .card-abonamente {
             background-color: purple;
+            text-align: center;
+            color: white;
             border: 0;
+            height: 55vh;
+            margin: 0 0 2vw 0;
         }
 
         .pret {
@@ -145,28 +113,79 @@
             border-radius: 1vw;
         }
 
-        .card-abonamente {
-            height: 50vh;
-            margin: 0 0 2vw 0;
+        .h3-abonamente {
+            margin: 0;
+            padding: 0;
+        }
+
+        .custom-list {
+            color: white;
+            background-color: purple;
+            border: 0;
+        }
+
+        /* ANTRENORI */
+
+        .card-antrenori {
+            background-color: purple;
+            color: white;
+            word-wrap: normal;
+        }
+
+        .card-antrenori p {
+            font-size: 1em;
+        }
+
+        .poze-antrenori {
+            width: 20vw;
+            padding: 0;
+            border-radius: 100%
+        }
+
+        /* LOCATIE */
+
+        .googlemaps {
+            height: 40vh;
+            width: 50vw;
+        }
+
+        /* FOOTER */
+
+        footer {
+            color: white;
+            font-weight: bold;
+            background-color: purple;
+            margin: 4vw 0 0 0;
+            padding: 1vw;
+        }
+
+        .text-footer {
+            padding: 0;
+            margin: 0 0 2vh;
+            font-size: 25px;
+        }
+
+        .logo-contact {
+            width: 3em;
+            margin: 0 1vw;
+            padding: 0;
         }
 
         .copyright {
             font-size: 1em;
             margin: 1vh 0 0 0;
         }
-
-        .card-antrenori {
-            background-color: purple;
-            color: white;
-        }
     </style>
 </head>
 
 <body>
+
+    <!--------NAVBAR-------->
+
     <nav class="navbar fixed-top navbar-expand-lg custom-navbar">
         <div class="container-fluid">
             <h1><a class="navbar-brand" href="index.html">
-                    <img src="imagini/logo-mgym.png" alt="MGYM" width="50">
+                    <img src="logo/logo-mgym.png" alt="MGYM" width="50">
                 </a></h1>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -192,8 +211,10 @@
         </div>
     </nav>
 
+    <!--------HEADER-------->
+
     <header>
-        <div id="header" class="carousel slide carousel-fade custom-carousel">
+        <div id="header" class="carousel slide carousel-fade">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#header" data-bs-slide-to="0" class="active" aria-current="true"
                     aria-label="Slide 1"></button>
@@ -204,7 +225,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item fullscreen active">
-                    <img src="imagini/first-carousel.jpg" class="d-block w-100"
+                    <img src="carousel/first-carousel.jpg" class="d-block w-100"
                         alt="Femeie care face abdomene pe o saltea de yoga într-un spațiu deschis.">
                     <div class="carousel-caption">
                         <p class="bold">Antrenament pentru abdomen</p>
@@ -213,7 +234,7 @@
                     </div>
                 </div>
                 <div class="carousel-item fullscreen">
-                    <img src="imagini/second-carousel.jpg" class="d-block w-100"
+                    <img src="carousel/second-carousel.jpg" class="d-block w-100"
                         alt="Persoană care face ridicări de greutăți cu o halteră într-o sală de fitness modernă">
                     <div class="carousel-caption">
                         <p class="bold">Antrenamente de forță pentru performanță</p>
@@ -223,7 +244,7 @@
                     </div>
                 </div>
                 <div class="carousel-item fullscreen">
-                    <img src="imagini/third-carousel.jpg" class="d-block w-100"
+                    <img src="carousel/third-carousel.jpg" class="d-block w-100"
                         alt="Grup de trei femei care fac exerciții de stretching pe saltele roz într-o sală spațioasă">
                     <div class="carousel-caption">
                         <p class="bold">Flexibilitate și echilibru într-un mediu relaxant</p>
@@ -233,7 +254,7 @@
                     </div>
                 </div>
                 <div class="carousel-item fullscreen">
-                    <img src="imagini/fourth-carousel.jpg" class="d-block w-100"
+                    <img src="carousel/fourth-carousel.jpg" class="d-block w-100"
                         alt="Două femei care fac antrenament cu gantere la sală, fotografiate din spate">
                     <div class="carousel-caption">
                         <p class="bold">Forță și rezistență</p>
@@ -243,7 +264,7 @@
                     </div>
                 </div>
                 <div class="carousel-item fullscreen">
-                    <img src="imagini/fifth-carousel.jpg" class="d-block w-100"
+                    <img src="carousel/fifth-carousel.jpg" class="d-block w-100"
                         alt="Două femei care fac plank și bat palma într-un studio de fitness.">
                     <div class="carousel-caption">
                         <p class="bold">Motivație în echipă</p>
@@ -263,11 +284,13 @@
         </div>
     </header>
 
+    <!--------DESPRE NOI-------->
+
     <div id="despre-noi" class="scroll">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <img class="despre-noi-logo" src="imagini/logo-mgym.png" alt="MGYM">
+                    <img class="despre-noi-logo" src="logo/logo-mgym.png" alt="MGYM">
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <h2>Despre noi</h2>
@@ -286,6 +309,8 @@
         </div>
     </div>
 
+    <!--------ABONAMENTE-------->
+
     <div id="abonamente" class="scroll">
         <h2>Abonamente</h2>
         <div class="container">
@@ -301,7 +326,6 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
                     <div class="card card-abonamente" style="width: 18rem;">
@@ -314,9 +338,7 @@
                                 <li class="list-group-item custom-list">Acces zonă de alergat</li>
                             </ul>
                         </div>
-
                     </div>
-
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
                     <div class="card card-abonamente" style="width: 18rem;">
@@ -333,7 +355,6 @@
                                 <li class="list-group-item custom-list">Plan Alimentar</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
@@ -346,14 +367,13 @@
                                 <li class="list-group-item custom-list">5 intrări pe săptămână</li>
                             </ul>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-    </div>
+
+    <!--------BODY BALANCE-------->
 
     <div>
         <h2>Body Balance</h2>
@@ -362,22 +382,24 @@
             Body Balance te ajută să-ți conectezi mintea și corpul într-o stare de echilibru perfect.</p>
     </div>
 
+    <!--------ANTRENORI-------->
+
     <div id="antrenori" class="scroll">
         <h2>Antrenori</h2>
         <div class="container">
             <div class="row gap-3 justify-content-center">
                 <div class="card card-antrenori p-0 col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center"
                     style="width: 18rem;">
-                    <img class="card-img-top" src="imagini/andreea-banciu.jpg"
+                    <img class="card-img-top" src="antrenori/andreea-banciu.jpg"
                         alt="O femeie cu părul blond prins în coadă și cu un top sportiv roșu, care zâmbește și se uită într-o parte, într-o încăpere">
                     <div class="card-body">
                         <h3 class="card-title">Andreea Banciu</h3>
-                        <p class="card-text">Antrenoare curs "Body Balance</p>
+                        <p class="card-text">Antrenoare curs "Body Balance"</p>
                     </div>
                 </div>
                 <div class="card card-antrenori p-0 col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center"
                     style="width: 18rem;">
-                    <img class="card-img-top" src="imagini/vlad-stanciu.jpg"
+                    <img class="card-img-top" src="antrenori/vlad-stanciu.jpg"
                         alt="Un bărbat musculos cu păr brunet, care stă într-o poziție de flotare, în mâna stângă având o ganteră pe care o trage la piept">
                     <div class="card-body">
                         <h3 class="card-title">Vlad Stanciu</h3>
@@ -386,7 +408,7 @@
                 </div>
                 <div class="card card-antrenori p-0 col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center"
                     style="width: 18rem;">
-                    <img class="card-img-top" src="imagini/andrei-tonciu.png"
+                    <img class="card-img-top" src="antrenori/andrei-tonciu.png"
                         alt="Un bărbat musculos cu păr brunet, care stă într-o poziție de flotare, în mâna stângă având o ganteră pe care o trage la piept">
                     <div class="card-body">
                         <h3 class="card-title">Andrei Tonciu</h3>
@@ -396,25 +418,31 @@
             </div>
         </div>
     </div>
+
+    <!--------LOCATIE-------->
+
     <div class="scroll" id="locatie">
         <h2>Locație</h2>
         <p>Sala se află pe Calea Mănăștur 95, aproape de Kaufland Mănăștur.</p>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1366.6212483001655!2d23.562361!3d46.7601164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490e630cdc8bff%3A0xa0401b1ddd981fb!2sCalea%20M%C4%83n%C4%83%C8%99tur%2095%2C%20Cluj-Napoca%20400535!5e0!3m2!1sro!2sro!4v1732726622489!5m2!1sro!2sro"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            class="googlemaps" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </div>
+
+    <!--------FOOTER-------->
 
     <footer>
         <p class="d-flex justify-content-center align-items-center text-footer">MGYM Cluj-Napoca Mănăștur</p>
         <div class="d-flex justify-content-center align-items-center">
-            <a href=https://www.instagram.com target="_blank"><img class="logo-contact" src="imagini/instagram.png"
+            <a href=https://www.instagram.com target="_blank"><img class="logo-contact" src="contact/instagram.png"
                     alt="Instagram"></a>
-            <a href=https://www.facebook.com target="_blank"><img class="logo-contact" src="imagini/facebook.png"
+            <a href=https://www.facebook.com target="_blank"><img class="logo-contact" src="contact/facebook.png"
                     alt="Facebook"></a>
-            <a href="mailto:mgym@gmail.com" target="_blank"><img class="logo-contact" src="imagini/email.png"
+            <a href="mailto:mgym@gmail.com" target="_blank"><img class="logo-contact" src="contact/email.png"
                     alt="Mail"></a>
-            <a href="tel:+40752123456" target="_blank"><img class="logo-contact" src="imagini/phone-call.png"
+            <a href="tel:+40752123456" target="_blank"><img class="logo-contact" src="contact/phone-call.png"
                     alt="Telefon"></a>
         </div>
         <p class="d-flex justify-content-center align-items-center copyright">
